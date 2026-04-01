@@ -4,171 +4,296 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Oivee</title>
-
-<style>
-:root {
-  --bg: #050505;
-  --text: #eaeaea;
-  --muted: #888;
-  --border: #333;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  background: radial-gradient(circle at top, #111, var(--bg));
-  color: var(--text);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-}
-
-/* Layout */
-.container {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 24px;
-  max-width: 800px;
-  margin: auto;
-}
-
-/* Typewriter */
-.line {
-  font-size: clamp(18px, 4vw, 28px);
-  margin: 6px 0;
-  white-space: nowrap;
-  overflow: hidden;
-  border-right: 2px solid #fff;
-  display: inline-block;
-}
-
-.glow {
-  text-shadow: 0 0 8px rgba(255,255,255,0.4);
-}
-
-/* Subtext */
-.subtext {
-  margin-top: 24px;
-  color: var(--muted);
-  font-size: 15px;
-  line-height: 1.5;
-  opacity: 0;
-  transform: translateY(10px);
-  transition: all 0.8s ease;
-}
-
-/* CTA */
-.btn {
-  margin-top: 28px;
-  display: inline-block;
-  padding: 14px 22px;
-  font-size: 15px;
-  border: 1px solid var(--border);
-  border-radius: 10px;
-  text-decoration: none;
-  color: white;
-  transition: all 0.25s ease;
-  opacity: 0;
-  transform: translateY(10px);
-}
-
-.btn:hover {
-  background: white;
-  color: black;
-}
-
-/* Footer */
-.footer {
-  position: fixed;
-  bottom: 15px;
-  left: 20px;
-  font-size: 12px;
-  color: #666;
-}
-
-/* Mobile improvements */
-@media (max-width: 480px) {
-  .container {
-    padding: 20px;
-  }
-
-  .btn {
-    width: 100%;
-    text-align: center;
-  }
-
-  .footer {
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: center;
-  }
-}
-</style>
+<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
+<!-- NAVBAR -->
+<header class="nav">
+  <div class="nav-inner">
+    <div class="logo">OIVEE</div>
+    <div class="nav-links">
+      <a href="#services">Services</a>
+      <a href="#case">Case Studies</a>
+      <a href="#process">Process</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</header>
 
-<div class="container">
-  <div id="line1" class="line glow"></div><br>
-  <div id="line2" class="line"></div><br>
-  <div id="line3" class="line"></div>
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
 
-  <div id="subtext" class="subtext">
-    Oivee builds websites designed to bring you more customers — not just look good.
+    <div class="hero-badge">SYSTEMS > DESIGN</div>
+
+    <div id="line1" class="line glow"></div>
+    <div id="line2" class="line"></div>
+    <div id="line3" class="line"></div>
+
+    <p class="subtext" id="subtext">
+      We build websites engineered to convert traffic into customers.
+    </p>
+
+    <div class="hero-cta">
+      <a href="#" class="btn primary">Get Free Audit</a>
+      <a href="#" class="btn secondary">View Work</a>
+    </div>
+
+    <div class="hero-stats">
+      <div class="stat">
+        <h3>Conversion Focused</h3>
+        <p>Every element has a purpose</p>
+      </div>
+      <div class="stat">
+        <h3>Mobile First</h3>
+        <p>Designed for real users</p>
+      </div>
+      <div class="stat">
+        <h3>Fast Delivery</h3>
+        <p>Launch in days, not months</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+  
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <div id="line1" class="line glow"></div>
+    <div id="line2" class="line"></div>
+    <div id="line3" class="line"></div>
+
+    <p class="subtext" id="subtext">
+      Oivee builds systems that turn visitors into customers.
+    </p>
+
+    <a href="#" class="btn">Get Free Audit →</a>
+  </div>
+</section>
+
+<!-- INTRO -->
+<section class="section">
+  <h2>We don’t build websites. We build growth systems.</h2>
+  <p>
+    Most businesses fail online because they treat websites as digital brochures.
+    We treat them as conversion machines.
+  </p>
+</section>
+
+  <section class="section">
+  <h2>The real reason businesses don’t grow online</h2>
+
+  <p>It’s not traffic.</p>
+  <p>It’s not competition.</p>
+  <p>It’s not even budget.</p>
+
+  <p>
+    It’s the lack of a system.
+    Most businesses operate without structure, without flow, without clarity.
+  </p>
+
+  <p>
+    Customers land on pages that don’t guide them.
+    They scroll through content that doesn’t convert.
+    They leave without taking action.
+  </p>
+
+  <p>
+    Oivee exists to fix that.
+  </p>
+
+  <p>
+    We design structured digital systems that guide attention,
+    build trust, and drive action.
+  </p>
+
+  <p>
+    Because attention without conversion is wasted.
+  </p>
+</section>
+
+<!-- SERVICES EXTENDED -->
+<section class="section grid">
+
+  <div class="card">
+    <h3>Landing Page Systems</h3>
+    <p>Designed for conversions, not decoration.</p>
   </div>
 
-  <a id="cta" class="btn" href="https://wa.me/919064982248?text=Hey%20I%20came%20from%20oivee.com" target="_blank">
-    Get Free Audit →
-  </a>
-</div>
+  <div class="card">
+    <h3>WhatsApp Funnels</h3>
+    <p>Turn traffic into direct conversations.</p>
+  </div>
 
-<div class="footer">
-  oivee.com / @oiveebyshik
-</div>
+  <div class="card">
+    <h3>Local Business Optimization</h3>
+    <p>Tailored for cafés, gyms, and service brands.</p>
+  </div>
 
-<script>
-const lines = [
-  "Initializing Oivee...",
-  "Analyzing your business...",
-  "Building systems that convert."
-];
+  <div class="card">
+    <h3>Speed Optimization</h3>
+    <p>Fast-loading pages convert better.</p>
+  </div>
 
-let lineIndex = 0;
-let charIndex = 0;
+  <div class="card">
+    <h3>Mobile UX</h3>
+    <p>Built for thumb-first interaction.</p>
+  </div>
 
-function typeLine() {
-  if (lineIndex < lines.length) {
-    const currentLine = document.getElementById("line" + (lineIndex + 1));
+  <div class="card">
+    <h3>Conversion Psychology</h3>
+    <p>Every section designed to push action.</p>
+  </div>
 
-    if (charIndex < lines[lineIndex].length) {
-      currentLine.innerHTML += lines[lineIndex].charAt(charIndex);
-      charIndex++;
-      setTimeout(typeLine, 35);
-    } else {
-      lineIndex++;
-      charIndex = 0;
-      setTimeout(typeLine, 400);
-    }
-  } else {
-    revealElements();
-  }
-}
+</section>
 
-function revealElements() {
-  document.getElementById("subtext").style.opacity = 1;
-  document.getElementById("subtext").style.transform = "translateY(0)";
+<!-- LONG FORM VALUE -->
+<section class="section">
+  <h2>Why most businesses fail online</h2>
 
-  setTimeout(() => {
-    document.getElementById("cta").style.opacity = 1;
-    document.getElementById("cta").style.transform = "translateY(0)";
-  }, 300);
-}
+  <p>They don’t have a system.</p>
+  <p>They don’t have a funnel.</p>
+  <p>They don’t have clarity.</p>
+  <p>They don’t have direction.</p>
+  <p>They rely on random posting instead of structured growth.</p>
+  <p>They build pretty pages instead of effective ones.</p>
+</section>
 
-typeLine();
-</script>
+  <section class="section">
+
+  <h2>What you actually get</h2>
+
+  <p>Not just a website.</p>
+  <p>A structured digital system.</p>
+
+  <p>Not just design.</p>
+  <p>Intentional conversion architecture.</p>
+
+  <p>Not just pages.</p>
+  <p>Customer pathways.</p>
+
+  <p>Not just visuals.</p>
+  <p>Psychology-driven layouts.</p>
+
+  <p>
+    Every section is placed with intent.
+    Every CTA is positioned with purpose.
+  </p>
+
+  <p>
+    This is not freelance work.
+    This is system building.
+  </p>
+
+</section>
+
+<!-- MULTIPLE CASE STUDIES -->
+<section id="case" class="section">
+
+  <h2>Case Studies</h2>
+
+  <div class="case">
+    <h3>Café System Build</h3>
+    <p>No website → Built landing page</p>
+    <p>Added WhatsApp funnel</p>
+    <p>Improved customer inquiries</p>
+  </div>
+
+  <div class="case">
+    <h3>Gym Funnel Optimization</h3>
+    <p>Weak conversions → Redesigned structure</p>
+    <p>Improved CTA placement</p>
+    <p>Higher lead flow</p>
+  </div>
+
+  <div class="case">
+    <h3>Local Brand Upgrade</h3>
+    <p>Outdated UI → Modern redesign</p>
+    <p>Improved trust perception</p>
+  </div>
+
+  <div class="case">
+    <h3>Food Business</h3>
+    <p>No system → Built full funnel</p>
+    <p>Traffic → Leads conversion improved</p>
+  </div>
+
+</section>
+
+<!-- REPEATED CONTENT BLOCKS (FOR DEPTH) -->
+<section class="section grid">
+  <div class="card">Better UI</div>
+  <div class="card">Better UX</div>
+  <div class="card">Better Conversion</div>
+  <div class="card">Better Structure</div>
+</section>
+
+<section class="section grid">
+  <div class="card">Clarity</div>
+  <div class="card">Speed</div>
+  <div class="card">Trust</div>
+  <div class="card">Results</div>
+</section>
+
+<section class="section grid">
+  <div class="card">Funnels</div>
+  <div class="card">Landing Pages</div>
+  <div class="card">Optimization</div>
+  <div class="card">Growth</div>
+</section>
+
+<!-- PROCESS DEEP -->
+<section class="section">
+  <h2>Our Detailed Process</h2>
+
+  <p>Step 1: Understand your business deeply</p>
+  <p>Step 2: Identify conversion leaks</p>
+  <p>Step 3: Build optimized structure</p>
+  <p>Step 4: Deploy fast-loading system</p>
+  <p>Step 5: Improve continuously</p>
+
+</section>
+
+<!-- TESTIMONIAL BLOCK -->
+<section class="section">
+  <h2>Feedback</h2>
+
+  <p>"Simple and effective."</p>
+  <p>"Actually focuses on results."</p>
+  <p>"Clean and fast."</p>
+</section>
+
+<!-- FAQ EXTENDED -->
+<section class="section">
+  <h2>FAQs</h2>
+
+  <p><strong>Do I need a website?</strong></p>
+  <p>No, we can build from scratch.</p>
+
+  <p><strong>How long does it take?</strong></p>
+  <p>2–5 days.</p>
+
+  <p><strong>Do you guarantee results?</strong></p>
+  <p>We optimize for conversions, results depend on execution.</p>
+
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <h2>Let’s build something that works</h2>
+  <a href="#" class="btn">Start Now →</a>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>Oivee</p>
+  <p>@oiveebyshik</p>
+  <p>oivee.com</p>
+</footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
